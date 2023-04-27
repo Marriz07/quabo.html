@@ -1,0 +1,283 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Game of Thrones</title>
+<script type="7f5eefdcdf4e62a25cafde9c-text/javascript">
+    (function(doc) { 
+		doc.className = doc.className.replace(/(^|\b)no\-js(\b|$)/, 'js');
+    }(document.documentElement));
+    </script>
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://jdbartlett.com/innershiv/innershiv.js"></script>
+    <![endif]-->
+	<style>
+	.osSwitch{position:relative;display:inline-block;width:34px;height:15.3px}.osSwitch input{opacity:0;width:0;height:0}
+	.osSlider{position:absolute;top:0;left:0;right:0;bottom:0;border-radius:34px;background-color:#93a0b5;transition:0.4s}
+	.osSlider:before{position:absolute;content:'';height:13px;width:13px;left:2px;bottom:1px;border-radius:50%;background-color:white;transition:0.4s}input:checked+.sliderGreen{background-color:#04d289}input:checked+.sliderRed{background-color:#ff3b30}input:not(:checked)+.defaultGreen{background-color:#04d289}input:checked+.osSlider:before{transform:translateX(17px)}
+	</style>
+	<style>
+	@font-face {
+    font-family: "TrajanPro";
+    src: url('../fonts/TrajanPro-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TrajanusBricks";
+    src: url('../fonts/TrajanusBricks.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TrajanusBricksXtra";
+    src: url('../fonts/TrajanusBricksXtra.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TrajanusBriX-Invers";
+    src: url('../fonts/TrajanusBriX-Invers.ttf') format("truetype");
+}
+
+body {
+	background-image: url('../images/background_image.jpg');
+	background-repeat: repeat;
+	background-size: 100%;
+	background-color: #fff;
+
+	margin: 0px;
+	padding: 0px;
+	min-width: 750px;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+#menu_lateral {
+	position: fixed;
+	height: 100%;
+	width: 15%;
+	background-color: rgba(3, 21, 45, 0.4);	
+	right: 0px;
+	overflow: auto;
+}
+
+#menu_lateral::-webkit-scrollbar { 
+    display: none; 
+}
+
+#main_bar {
+	background-color: rgba(3, 21, 45, 0.4);
+
+	position: absolute;
+	top: 100px;
+	height: 300px;
+	width: 760px;	
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+#main_bar #title {
+	font-size: 50px;
+	color: rgba(255, 255, 255, 1.0);
+	font-family: "TrajanusBricks";
+}
+
+#main_bar #slogan {
+	padding-top: 30px;
+	color: rgba(255, 255, 255, 1.0);
+	font-size: 25px;
+	font-family: "TrajanPro";
+}
+
+#nav_bar{
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	vertical-align: middle;
+	color: rgba(255, 255, 255, 1.0);
+	font-family: "TrajanusBriX-Invers";
+	font-size: 16px;
+}
+
+#nav_bar a {
+	text-decoration: none;
+}
+
+#nav_bar ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+#nav_bar li{
+	list-style: none;
+	/*float: left;*/
+}
+
+#nav_bar ul li{
+	/*display: inline;
+	border-style:solid;
+	border-width:1px;*/
+	padding: 5px;
+	padding: 5px;
+	/*background-color: rgba(3, 21, 45, 0.4);*/
+}
+
+#nav_bar li a {
+	display: block;
+	text-align: center;
+}
+
+#nav_bar ul li:hover {
+	background-color: rgba(255, 255, 255, 0.4);
+	height:auto;
+}
+
+#nav_bar ul li a:link{
+	color: rgba(255, 255, 255, 1.0);
+}
+
+#nav_bar ul li a:hover{
+	color: rgba(255, 255, 255, 1.0);
+}
+
+#nav_bar ul li a:visited {
+	color: rgba(255, 255, 255, 1.0);
+}
+
+#nav_bar ul li a:active{
+	color: rgba(255, 255, 255, 1.0);
+}
+
+#nav_bar div { 
+	position: absolute;
+	visibility: hidden;
+	display:block;
+	margin: 0;
+}
+
+#nav_bar div a { 
+	text-decoration: none;
+	position: relative;
+	display: block;
+	width: auto;
+	/*border-style:solid;
+	border-width:1px;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: "TrajanPro";
+	font-size: 12px;
+}
+
+#nav_bar div a:hover{
+	background-color: rgba(3, 21, 45, 0.4);	
+}
+
+</style>
+</head>
+<body>
+ <!-- Slide Show -->
+	 <section>
+	
+	    <img class="mySlides" src="336586071_1257822041806969_4236357908886803365_n.jpg" style="width: 100%; top: 0%; position: absolute;  height: 100%; display: block;">
+		<img class="mySlides" src="274157324_1440553129681032_5834823953964942665_n.jpg" style="width: 100%; top: 0%; position: absolute;  height: 100%; display: none;">
+		<img class="mySlides" src="255954166_1113033572841929_5195324942430895332_n.jpg" style="width: 100%; top: 0%; position: absolute;  height: 100%; display: none;">
+		<img class="mySlides" src="336077253_3518056325076427_6691070937998969734_n.jpg" style="width: 100%; top: 0%; position: absolute;  height: 100%; display: block;">
+	 </section>
+	 </a>
+<div id="menu_lateral">
+<nav id="nav_bar">
+<ul>
+<li> 
+ <a id="retroceder" href="index2.html">Author</a>
+</li>	
+<br>
+<li> 
+<a href="index3.html">Map</a>
+</li>
+<br>
+<li> <a href="index4.html" onmouseover="if (!window.__cfRLUnblockHandlers) return false; mopen('m3')" onmouseout="if (!window.__cfRLUnblockHandlers) return false; mclosetime()" data-cf-modified-7f5eefdcdf4e62a25cafde9c-="">Characters</a>
+<div id="m3" onmouseover="if (!window.__cfRLUnblockHandlers) return false; mcancelclosetime()" onmouseout="if (!window.__cfRLUnblockHandlers) return false; mclosetime()" data-cf-modified-7f5eefdcdf4e62a25cafde9c-="">
+<a href="#">Arya Stark</a>
+<a href="#">Bran Stark</a>
+<a href="#">Catelyn Stark</a>
+<a href="#">Cersei Lannister</a>
+<a href="#">Daenerys Targaryen</a>
+<a href="#">Jaime Lannister</a>
+<a href="#">Joffrey Baratheon</a>
+<a href="#">Jon Snow</a>
+<a href="#">Robb Stark</a>
+<a href="#">Sandor Clegane</a>
+<a href="#">Sansa Stark</a>
+<a href="#">Tyrion Lannister</a>
+<a href="Characters/index.html">All</a>
+</div>
+</li>
+<br>
+<li> 
+<a href="index5.html" onmouseover="if (!window.__cfRLUnblockHandlers) return false; mopen('m4')" onmouseout="if (!window.__cfRLUnblockHandlers) return false; mclosetime()" data-cf-modified-7f5eefdcdf4e62a25cafde9c-="">Houses</a>
+<div id="m4" onmouseover="if (!window.__cfRLUnblockHandlers) return false; mcancelclosetime()" onmouseout="if (!window.__cfRLUnblockHandlers) return false; mclosetime()" data-cf-modified-7f5eefdcdf4e62a25cafde9c-="">
+<a href="Houses/arryn.html">Arryn</a>
+<a href="Houses/baratheon.html">Baratheon</a>
+<a href="Houses/greyjoy.html">Greyjoy</a>
+<a href="Houses/lannister.html">Lannister</a>
+<a href="Houses/martell.html">Martell</a>
+<a href="Houses/stark.html">Stark</a>
+<a href="Houses/targaryen.html">Targaryen</a>
+<a href="Houses/tully.html">Tully</a>
+<a href="Houses/tyrell.html">Tyrell</a>
+</div>
+</li>
+<br>
+<li> <a href="index6.html" onmouseover="if (!window.__cfRLUnblockHandlers) return false; mopen('m5')" onmouseout="if (!window.__cfRLUnblockHandlers) return false; mclosetime()" data-cf-modified-7f5eefdcdf4e62a25cafde9c-=""> Gallery </a>
+<div id="m5" onmouseover="if (!window.__cfRLUnblockHandlers) return false; mcancelclosetime()" onmouseout="if (!window.__cfRLUnblockHandlers) return false; mclosetime()" data-cf-modified-7f5eefdcdf4e62a25cafde9c-="">
+<a href="Gallery/photos.html">Photos</a>
+<a href="Gallery/videos.html">Videos</a>
+</div>
+</li>
+<br>
+<li> <a href="index7.html"> About Me </a>
+</li>
+</ul>
+</nav>
+</div>
+<audio controls autoplay>
+  <source src="8d82b5_Game_of_Thrones_Theme_Song.mp3" type="audio/mpeg" loop="true" hidden="true" autostart="true">
+</audio>
+<div id="main_bar">
+<p id="title">Game of Thrones</p>
+<p id="slogan">" When you play the game of thrones you win or you die. "</p>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="7f5eefdcdf4e62a25cafde9c-text/javascript"> </script>
+<script type="7f5eefdcdf4e62a25cafde9c-text/javascript">!window.jQuery && document.write('<'+'script src="./lib/jquery-1.6.1.min.js"> </'+'script>'); </script>
+<script src="./assets/lib/mosaiqy-1.0.1.min.js" id="mosaiqy_tpl" type="7f5eefdcdf4e62a25cafde9c-text/javascript">
+        <div>
+           <img src="D:\MyFiles\Download\background_image.jpg">
+        </div>
+    </script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7f5eefdcdf4e62a25cafde9c-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon='{"rayId":"7b3f6b9d391907af","token":"75f05cfe098f4ad38f55045cf3aaf8e4","version":"2023.3.0","si":100}' crossorigin="anonymous"></script>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>

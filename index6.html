@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<!-- Slide Show -->
+	 <section>
+	 <a id="retroceder" href="index.html"></a>
+<a id="photos" href="photos.html">
+	    <img class="mySlides" src="wp5531918.webp" style="width: 38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="wp5531920.jpg" style="width:  38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: none;">
+		<img class="mySlides" src="846909.png" style="width:  38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: none;">
+		<img class="mySlides" src="imrs.jpg" style="width:  38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="846887.jpg" style="width:  38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="wallpapersden.com_daenerys-targaryen-final-episode_3840x2400.jpg" style="width:  38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="195066-Game_of_Thrones-war-ship-sinking_ships-fire-Blackwater-Kings_Landing-artwork-fantasy_art-concept_art-sea-clouds-smoke.jpg" style="width: 38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="the-iron-throne-4k-fv.jpg" style="width: 38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="238-2388955_game-of-thrones-dragon-background-wallpaper.jpg" style="width:  38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="screen-shot-2017-08-08-at-11-03-43-am.webp" style="width: 38%; top: 30%; left: 6%; position: absolute;  height: 38%; display: block;">
+		<img class="mySlides" src="game-of-thrones.jpg.crdownload" style="width: 38%; top: 30%; left: 6%; position: absolute;  height:  38%; display: block;">
+	 </section>
+	 </a>
+	 	<a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ">
+	   <img src="daenerys_targaryen_dragon_in_game_of_thrones_4k-3840x2160.jpg" alt="Daenerys Targeryen" style="position: absolute; left:56%; height: 38%; width:38%; top: 30%; ">
+	   </a>
+<title>Gallery</title>
+<style>
+	 img{
+		    width: 15% ;
+			height: 30%;
+			border: 6px solid;
+			border-color: grey;
+			display: block;
+		}	
+		p{color: white;}
+        h3{color: white;}
+		h2{color: white;}
+		h1{color: white;}
+		h4{color: white;}
+		@font-face {
+    font-family: "TrajanPro";
+    src: url('../fonts/TrajanPro-Regular.ttf') format("truetype");
+}
+body {
+	background: url(Wallpaper-Game-Of-Thrones-War-Battle-Aegon-Targaryen-J20.jpg) no-repeat fixed;
+	background-size: 100% 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+td {
+    width: 50%;
+}
+
+#retroceder {
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: url('back_arrow.png') no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#retroceder:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+</style>
+</head>
+<body>
+<h1>Gallery</h1>
+<table>
+<tr>
+<td>
+<h2 onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = 'photos.html'; return false;" data-cf-modified-a7b75db316dbe8a9d36d65bf-="">Photos</h2>
+</td>
+<td>
+<h2 onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = 'videos.html'; return false;" data-cf-modified-a7b75db316dbe8a9d36d65bf-="">Trailer</h2>
+</td>
+</tr>
+</table>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>

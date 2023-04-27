@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../assets/css/map.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>Map</title>
+<style>.osSwitch{position:relative;display:inline-block;width:34px;height:15.3px}
+.osSwitch input{opacity:0;width:0;height:0}
+.osSlider{position:absolute;top:0;left:0;right:0;bottom:0;border-radius:34px;background-color:#93a0b5;transition:0.4s}
+.osSlider:before{position:absolute;content:'';height:13px;width:13px;left:2px;bottom:1px;border-radius:50%;background-color:white;transition:0.4s}input:checked+.sliderGreen{background-color:#04d289}input:checked+.sliderRed{background-color:#ff3b30}input:not(:checked)+.defaultGreen{background-color:#04d289}input:checked+.osSlider:before{transform:translateX(17px)}
+</style>
+<style>
+  @font-face {
+    font-family: "TrajanPro";
+    src: url('../fonts/TrajanPro-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TrajanusBricks";
+    src: url('../fonts/TrajanusBricks.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TrajanusBricksXtra";
+    src: url('../fonts/TrajanusBricksXtra.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "TrajanusBriX-Invers";
+    src: url('../fonts/TrajanusBriX-Invers.ttf') format("truetype");
+}
+
+body {
+	background-image: url('../images/Map_of_Ice_and_Fire.jpg');
+	background-repeat: no-repeat;
+	//background-size: cover;
+	background-color: #fff;
+
+	margin: 0px;
+	padding: 0px;
+	width:2800px;
+	height:2500px;
+}
+
+#back {
+	background-color: rgba(3, 21, 45, 0.4);
+	width:200px;
+	margin-top: 50px;
+}
+
+#back img{
+	display: block;
+	margin:auto;
+}
+
+.clicable-item {
+	background-color: rgba(3, 21, 45, 0.4);
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+	animation:flashing 3s;
+	animation-iteration-count: infinite;
+	-webkit-animation:flashing 3s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.clicable-item a img{
+	border-radius: 50%;
+	width:50px;
+	height:50px;
+}
+
+#winterfell {
+	margin-top: 375px;
+	margin-left: 398px;
+}
+
+#pyke {
+	margin-top: 446px;
+	margin-left: 173px;
+}
+
+#lannisport {
+	margin-top: 132px;
+	margin-left: 170px;
+}
+
+#riverrun {
+	margin-top: -166px;
+	margin-left: 342px;
+}
+
+#eyrie {
+	margin-top: -132px;
+	margin-left: 622px;
+}
+
+#dragonstone {
+	margin-top: 106px;
+	margin-left: 722px;
+}
+
+#kingslanding {
+	margin-top: 60px;
+	margin-left: 550px;
+}
+
+#highgarden {
+	margin-top: 112px;
+	margin-left: 300px;
+}
+
+#stromsend {
+	margin-left: 630px;
+	margin-top: -73px;
+}
+
+#sunspear {
+	margin-top: 213px;
+	margin-left: 693px;
+}
+
+@keyframes flashing
+{
+	0% {background: rgba(3, 21, 45, 0);}
+	35% {background:rgba(3, 21, 45, 0.8);}
+
+	70% {background: rgba(3, 21, 45, 0.8);}
+	100% {background:rgba(3, 21, 45, 0);}
+}
+
+@-webkit-keyframes flashing /* Safari and Chrome */
+{
+	0% {background: rgba(3, 21, 45, 0);}
+	35% {background:rgba(3, 21, 45, 0.8);}
+
+	70% {background: rgba(3, 21, 45, 0.8);}
+	100% {background:rgba(3, 21, 45, 0);}
+}
+body {
+    background-image: url(Map_of_Ice_and_Fire.jpg);
+    background-repeat: no-repeat;
+    //background-size: cover;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 2800px;
+    height: 2500px;
+}
+#retroceder {
+    width: 50px;
+    height: 100%;
+    position: fixed;
+	top: 0%;
+    left: 0;
+    background: url(back_arrow.png) no-repeat;
+    background-position: center;
+    background-size: 50%;
+    background-color: rgba(255,255,255,.5);
+}
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<a id="retroceder" href="index.html"></a>
+<div id="back">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.history.back(-1); return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+</a>
+</div>
+<div class="clicable-item" id="winterfell">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/stark.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="pyke">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/greyjoy.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="lannisport">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/lannister.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="riverrun">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/tully.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="eyrie">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/arryn.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="dragonstone">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/targaryen.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="kingslanding">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/index.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="highgarden">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/tyrell.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="stromsend">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/baratheon.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<div class="clicable-item" id="sunspear">
+<a href="" onClick="if (!window.__cfRLUnblockHandlers) return false; window.location.href = '../Houses/martell.html'; return false;" data-cf-modified-b063bf90f291567d3d93cc4e-="">
+<img src="clicable-background.png">
+</a>
+</div>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="b063bf90f291567d3d93cc4e-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2b4487d741ca48dcbadcaf954e159fc61680799950996" integrity="sha512-D/jdE0CypeVxFadTejKGTzmwyV10c1pxZk/AqjJuZbaJwGMyNHY3q/mTPWqMUnFACfCTunhZUVcd4cV78dK1pQ==" data-cf-beacon='{"rayId":"7b3f71b1af9d0438","token":"75f05cfe098f4ad38f55045cf3aaf8e4","version":"2023.3.0","si":100}' crossorigin="anonymous"></script>
+</body>
